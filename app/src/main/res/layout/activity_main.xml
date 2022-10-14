@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/en_kep"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/paper" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="a te választásod"
+				android:textSize="30sp" />
+
+			<ImageView
+				android:id="@+id/gep_kep"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:src="@drawable/scissors" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="a gép választása"
+				android:textSize="30sp" />
+
+			<TextView
+				android:id="@+id/TextEredmeny"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="eredmény: ember: 0 computer: 0"
+				android:textSize="15sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/buttonKo"
+				android:layout_width="85dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="kő" />
+
+			<Button
+				android:id="@+id/buttonPapir"
+				android:layout_width="85dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="papír" />
+
+			<Button
+				android:id="@+id/buttonOllo"
+				android:layout_width="85dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="10dp"
+				android:text="olló" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
